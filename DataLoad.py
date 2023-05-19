@@ -14,7 +14,7 @@ def load_data():
 
 def load_twitter_data(path, columns):
     #df = pd.read_csv(path, sep=';', skiprows=[i for i in range(1,1500000)], usecols = columns, low_memory=False)
-    df = pd.read_csv(path, sep=';', nrows= 15000, usecols=columns, low_memory=False)
+    df = pd.read_csv(path, sep=';', nrows= 1500000, usecols=columns, low_memory=False)
     return df
 
 def load_bitcoin_data(path, columns):
